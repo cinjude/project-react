@@ -1,6 +1,6 @@
  
 import { useState } from 'react'
-import Quotes from "./Componentes/Quotes.json"
+import Quotes from "./Quotes.json"
 import reactLogo from './assets/react.svg'
 
 import './App.css'
