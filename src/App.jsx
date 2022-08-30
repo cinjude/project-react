@@ -1,17 +1,17 @@
  
 import { useState } from 'react'
-import quotes from "./Componentes/quotes.json"
+import Quotes from "./Componentes/Quotes.json"
 import reactLogo from './assets/react.svg'
 
 import './App.css'
 
 function App() {
 
- const randomQuotes= Math.floor(Math.random() * quotes.length)
+ const randomQuotes= Math.floor(Math.random() * Quotes.length)
 const [ news, setNews] = useState(randomQuotes)
 
 const changeButton = () => {
- const randomFunction = Math.floor(Math.random() * quotes.length)
+ const randomFunction = Math.floor(Math.random() * Quotes.length)
  setNews(randomFunction) 
 
 }
@@ -30,8 +30,8 @@ document.body.style = `background: ${eachColors[reformColors]}`
    <div className="App">
      <div className='card' style={{color: eachColors[reformColors] }}>
        
-     <p> <i class="fa-solid fa-comment-dots"></i> {quotes[news].quote} </p>
-     <h3> {quotes[news].author} </h3>
+     <p> <i class="fa-solid fa-comment-dots"></i> {Quotes[news].quote} </p>
+     <h3> {Quotes[news].author} </h3>
      <button onClick={changeButton}><i class="fa-solid fa-angle-right"></i> </button>
 
      </div>
